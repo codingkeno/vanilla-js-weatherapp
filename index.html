@@ -15,19 +15,27 @@
   </head>
   <body>
     <div class="container">
+      <div class="weather-app-wrapper">
       <div class="weather-app">
+        <div class="overview">
         <h1>Brampton, ON</h1>
         <ul>
           <li>Monday 07:00</li>
           <li>Partly Cloudy</li>
         </ul>
+      </div>
         <div class="row">
           <div class="col-6">
+            <div class="clearfix weather-temperature">
             <img
               src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
               alt="partly_cloudy"
+              class="float-left"
             />
-            0° C | F
+            <div class="float-left">
+              <strong>25</strong><span class="units">°C | °F</span>
+            </div>
+          </div>
           </div>
           <div class="col-6">
             <ul>
@@ -37,15 +45,15 @@
             </ul>
           </div>
         </div>
-        <small>
-          <a
-            href="https://github.com/codingkeno/vanilla-js-weatherapp"
-            target="_blank"
-            >Open-source project</a
-          >
-          created by Emma Konstantinou
-        </small>
       </div>
+      <small>
+        <a
+          href="https://github.com/codingkeno/vanilla-js-weatherapp"
+          target="_blank"
+          >Open-source project</a
+        >
+        created by Emma Konstantinou
+      </small>
     </div>
     <script src="/src/app.js"></script>
   </body>
