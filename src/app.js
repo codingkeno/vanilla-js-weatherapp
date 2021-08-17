@@ -43,7 +43,7 @@ function displayTemperature(response) {
   iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
-function search(city){
+function search(city) {
   let apiKey = "36b04148136c5da7b52a56c68d439cee";
 
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
@@ -56,7 +56,5 @@ function handleSubmit(event) {
   search(cityInputElement.value);
 }
 
-search("New York")
-
-let form = document.querySelector("#search-form")
+let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
